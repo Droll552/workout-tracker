@@ -39,3 +39,14 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Environment variables (secrets, API keys)
+.env
+
+# Logs
+*.log
+
+# Build artifacts (APKs, IPAs you download from EAS)
+*.apk
+*.ipa
+*.aab
