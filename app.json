@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "workout-tracker",
+    "name": "Workout Tracker",
     "slug": "workout-tracker",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -12,8 +12,12 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rami.workouttracker"
     },
     "android": {
       "adaptiveIcon": {
@@ -21,10 +25,19 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.rami.workouttracker"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "52084b69-e0ea-403c-9f99-5499d836ffc4"
+      }
     }
   }
 }
