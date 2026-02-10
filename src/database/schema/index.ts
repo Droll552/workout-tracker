@@ -41,7 +41,7 @@ export const schema = appSchema({
       name: "workout_exercises",
       columns: [
         { name: "workout_id", type: "string", isIndexed: true },
-        { name: "excercise_id", type: "string", isIndexed: true },
+        { name: "exercise_id", type: "string", isIndexed: true },
         { name: "order", type: "number" },
         { name: "notes", type: "string", isOptional: true },
         { name: "superset_group", type: "number", isOptional: true },
@@ -57,10 +57,10 @@ export const schema = appSchema({
       columns: [
         { name: "workout_exercise_id", type: "string", isIndexed: true },
         { name: "set_number", type: "number" },
-        { name: "set_type", type: "string", isOptional: true }, //warmup, normal, dropset, failure, amrap
+        { name: "set_type", type: "string" }, //warmup, normal, dropset, failure, amrap
         { name: "reps", type: "number" },
         { name: "weight", type: "number" },
-        { name: "weight_unit", type: "string" },
+        { name: "weight_units", type: "string" },
         { name: "rpe", type: "number", isOptional: true }, //Target Rate of Perceived Exertion 1-10.
         { name: "is_completed", type: "boolean" },
         { name: "rest_seconds_planned", type: "number", isOptional: true },
@@ -83,7 +83,7 @@ export const schema = appSchema({
 
     // Template Exercises
     tableSchema({
-      name: "template_excersises",
+      name: "template_exercises",
       columns: [
         { name: "template_id", type: "string", isIndexed: true },
         { name: "exercise_id", type: "string", isIndexed: true },
@@ -128,7 +128,7 @@ export const schema = appSchema({
     tableSchema({
       name: "user_settings",
       columns: [
-        { name: "weight_units", type: "string" },
+        { name: "weight_unit", type: "string" },
         { name: "default_rest_seconds", type: "number" },
         { name: "theme", type: "string" }, // light, dark, system
         { name: "notifications_enabled", type: "boolean" },
