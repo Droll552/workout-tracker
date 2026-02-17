@@ -21,16 +21,6 @@ const adapter = new SQLiteAdapter({
   },
 });
 
-console.log('Exercise associations:', Exercise.associations);
-console.log('Workout associations:', Workout.associations);
-console.log('WorkoutExercise associations:', WorkoutExercise.associations);
-console.log('Set associations:', Set.associations); // ← ADD THIS
-console.log('TemplateExercise associations:', TemplateExercise.associations);
-console.log('WorkoutTemplate associations:', WorkoutTemplate.associations); // ← ADD THIS
-console.log('PersonalRecord associations:', PersonalRecord.associations);
-console.log('BodyMeasurement associations:', BodyMeasurement.associations); // ← ADD THIS
-console.log('UserSettings associations:', UserSettings.associations); 
-
 export const database = new Database({
   adapter,
   modelClasses: [
