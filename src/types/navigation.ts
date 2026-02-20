@@ -15,7 +15,7 @@ export type HomeStackParaList = {
     HomeScreen: undefined
 }
 
-export type WOrkoutStackParamList = {
+export type WorkoutStackParamList = {
     WorkoutHome: undefined
     ActiveWorkout: {templateId?: string; workoutId?: string}
     SelectExercise: {workoutId: string}
